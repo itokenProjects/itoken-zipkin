@@ -1,0 +1,30 @@
+spring:
+  cloud: #配置读取配置 读取github(云)上的配置
+    config:
+      uri: http://localhost:8888
+      name: itoken-zipkin
+      label: master
+      profile: dev
+
+
+#spring:
+#  application:
+#    name: itoken-zipkin
+#  boot:  # spring boot admin 健康检测地址配置
+#    admin:
+#      client:
+#        url: http://localhost:8084
+#
+#server:
+#  port: 9411
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#management: #
+#  metrics:
+#    web:
+#      server:
+#        auto-time-requests: false
